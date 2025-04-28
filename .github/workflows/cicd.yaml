@@ -1,4 +1,7 @@
 # CICD using GitHub actions
+# This workflow builds a Go web application, runs tests, and pushes the Docker image to DockerHub.
+# It also updates the Helm chart with the new image tag.
+# The workflow is triggered on push events to the main branch, excluding changes to the helm chart.
 
 name: CI/CD
 
